@@ -20,5 +20,28 @@ public class Personne {
 			prenom = cPrenom;
 		}
 		
+		//accesseurs et mutateurs
+		public int getId(){
+			return id;
+		}
+		public String getNom(){
+			return nom;
+		}
+		public String getPrenom(){
+			return prenom;
+		}
+		public void setId(){
+			id = ++count;
+		}
+		public void setNom(String xNom){
+			nom =xNom;
+		}
+		public void setPrenom(String xPrenom){
+			prenom = xPrenom;
+		}
+		//méthodes
+		public String toString(){
+			return "Nom "+this.getNom()+" et Prénom"+this.getPrenom();
+		}
 		
 }
