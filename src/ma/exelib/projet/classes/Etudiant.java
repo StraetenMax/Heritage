@@ -2,22 +2,22 @@ package ma.exelib.projet.classes;
 
 public class Etudiant extends Personne {
 		//propriétés
-	private String cne;
+	private int cne;
 	
 		//constructeurs
 	public Etudiant(){
 		super();
-		cne = "";
+		cne = 0;
 	}
-	public Etudiant(String cNom, String cPrenom, String cCne){
+	public Etudiant(String cNom, String cPrenom, int cCne){
 		super(cNom, cPrenom);
 		cne = cCne;
 	}
 	// accesseurs et mutateurs
-	public String getCne(){
+	public int getCne(){
 		return cne;
 	}
-	public void setCne(String xCne){
+	public void setCne(int xCne){
 		cne = xCne;
 	}
 	//méthodes
