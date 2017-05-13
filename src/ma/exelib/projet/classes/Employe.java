@@ -14,5 +14,15 @@ public class Employe extends Personne{
 		salaire = cSalaire;
 	}
 		//accesseurs et mutateurs
+	    public double getSalaire(){
+	    	return salaire;
+	    }
+	    public void setSalaire(double xSalaire){
+	    	salaire = xSalaire;		
+	    }
+	    //méthodes
+	    public String toString(){
+	    	return super.toString()+" mon salaire est de "+this.getSalaire();
+	    }
 	
 }
