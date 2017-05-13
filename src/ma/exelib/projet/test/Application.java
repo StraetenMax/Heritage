@@ -7,7 +7,7 @@ import ma.exelib.projet.classes.Professeur;
 public class Application {
 
 	public static void main(String[] args) {
-		Employe[] employes = new Employe[3];
+		Employe employes[] = new Employe[3];
 		employes[0]= new Employe("DOUK","Rachid",5000.0);
 		employes[1]= new Employe("DUPONT","Jean",15000.0);
 		employes[2]= new Employe("MARTIN","Henri",20000.0);
@@ -21,6 +21,18 @@ public class Application {
 		professeurs[0]= new Professeur("TOTO","John",2300.0,"JAVA/JEE");
 		professeurs[1]= new Professeur("TORCHE","Eric",1500.0,"Ruby");
 		professeurs[2]= new Professeur("RICHARD","Philippe",3000.0,"PHP");
+	
+	// appeler la méthode
+		for(Employe e : employes){
+			System.out.println(e);
+		}
+		for(Etudiant s : etudiants){
+			System.out.println(s);
+		}
+		for(Professeur r : professeurs){
+			System.out.println(r);
+		}
+	
 	}
 	
 
