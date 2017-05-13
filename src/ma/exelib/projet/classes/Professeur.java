@@ -15,4 +15,16 @@ public class Professeur extends Employe {
 			specialite = cSpecialite;
 		}
 		//accesseur et mutateurs
+			public String getSpecialite(){
+				return specialite;
+			}
+			public void setSpecialite(String xSpecialite){
+				specialite = xSpecialite;
+			}
+			
+		//méthodes
+			public String toString(){
+				return super.toString()+" ma spécialité est de : "+this.getSpecialite();
+			}
+		
 }
