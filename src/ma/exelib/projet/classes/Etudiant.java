@@ -14,5 +14,15 @@ public class Etudiant extends Personne {
 		cne = cCne;
 	}
 	// accesseurs et mutateurs
+	public String getCne(){
+		return cne;
+	}
+	public void setCne(String xCne){
+		cne = xCne;
+	}
+	//méthodes
+	public String toString(){
+		return super.toString()+"mon CNE est de "+this.getCne();
+	}
 	
 }

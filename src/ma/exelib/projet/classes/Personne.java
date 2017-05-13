@@ -41,7 +41,7 @@ public class Personne {
 		}
 		//méthodes
 		public String toString(){
-			return "Nom "+this.getNom()+" et Prénom"+this.getPrenom();
+			return "Je suis "+this.getNom()+" "+this.getPrenom();
 		}
 		
 }
